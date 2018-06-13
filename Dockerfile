@@ -5,12 +5,11 @@ MAINTAINER po1221 <popo1221@outlook.com>
 RUN mkdir -p /conf && \
 mkdir -p /conf-copy && \
 mkdir -p /data && \
-mkdir -p /webui-aria2 && \
 apk update && \
 apk add --no-cache --update aria2 && \
 apk add curl && \
 curl -L https://codeload.github.com/ziahamza/webui-aria2/zip/master -o /tmp/webui-aria2-master.zip && \
-unzip /tmp/webui-aria2-master.zip / && \
+unzip /tmp/webui-aria2-master.zip -d / && \
 rm /tmp/webui-aria2-master.zip && \
 apk add --update darkhttpd
 
