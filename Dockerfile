@@ -9,7 +9,7 @@ mkdir -p /webui-aria2 && \
 apk update && \
 apk add --no-cache --update aria2 && \
 apk add curl && \
-curl -L https://github.com/ziahamza/webui-aria2 -o /tmp/webui-aria2-master.zip && \
+curl -L https://codeload.github.com/ziahamza/webui-aria2/zip/master -o /tmp/webui-aria2-master.zip && \
 unzip /tmp/webui-aria2-master.zip / && \
 rm /tmp/webui-aria2-master.zip && \
 apk add --update darkhttpd
