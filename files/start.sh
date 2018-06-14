@@ -22,7 +22,7 @@ fi
 chmod +x /conf/on-complete.sh
 touch /conf/aria2.session
 
-darkhttpd /webui-aria2-master --port 80 &
-darkhttpd /data --port 8080 &
+darkhttpd /webui-aria2-master --port 30080 &
+darkhttpd /data --port 38080 &
 aria2c --conf-path=/conf/aria2.conf --dht-file-path=/conf/dht.dat 
 
